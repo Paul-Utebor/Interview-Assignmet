@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Task</title>
+
+    <script>
+        function display() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('number').value;
+            alert(`Your name is: ${name}, your email is ${email}, your number is ${phone}`);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="nav-item">
+            <li>Pro Cleaners</li>
+            <li>Phone 1-800-222-3030</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form-div">
+            <div class="text-div">
+                <h1>Vancouver's Best <br> Home Cleaners</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores velit, reiciendis non doloribus eaque neque saepe soluta unde ab sequi.</p>
+            </div>
+
+            <fieldset class="sign-in-form">
+                <form>
+                    <h4>Request Info & Booking</h4>
+                    <small>Fill out this form and we'll contact you as soon as we can</small>
+
+                    <input type="text" placeholder="Your Name" name="name" id="name" required>
+
+                    <input type="email" placeholder="Your Email" name="email" id="email" required>
+                    <input type="number" name="number" placeholder=" Your Phone" id="number" required>
+
+                    <button type="submit" id="send" onclick="display()">Request Info & Booking</button>
+
+                </form>
+
+            </fieldset>
+        </div>
+
+    </div>
+
+    <section class="description">
+        <div class="professional">
+            <span class="f-awesome"><i class="fas fa-user f-icon"></i></span>
+            <h4>Trusted professionals</h4>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Inventore, adipisci.</p>
+        </div>
+        <div class="calender">
+            <span class="f-awesome"><i class="fas fa-calendar-alt f-icon"></i></span>
+            <h4>Available everyday</h4>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Inventore, adipisci.</p>
+        </div>
+        <div class="money">
+            <span class="f-awesome"><i class="fas fa-dollar-sign f-icon"></i></span>
+            <h4>100% Money-Back Guarantee</h4>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Inventore, adipisci.</p>
+        </div>
+    </section>
+
+    <section class="clients-say">
+        <h2>What clients say</h2>
+        <div class="clients">
+
+            <figure>
+                <img src="./img/dami-adebayo-k6aQzmIbR1s-unsplash.jpg" alt="" width="100">
+                <h4>Paula Para</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Placeat, natus?</p>
+            </figure>
+            <figure>
+                <img src="./img/dami-adebayo-k6aQzmIbR1s-unsplash.jpg" alt="" width="100">
+                <h4>Ana Carola</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Placeat, natus?</p>
+            </figure>
+        </div>
+        <footer>
+            &COPY; all rights reserved -Sir paul
+        </footer>
+    </section>
+
+</body>
+
+</html>
